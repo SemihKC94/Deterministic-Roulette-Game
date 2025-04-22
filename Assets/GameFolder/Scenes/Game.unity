@@ -36588,6 +36588,7 @@ MonoBehaviour:
   wheelControll: {fileID: 296881021}
   pivotTransform: {fileID: 1217010800}
   pivotWheelTransform: {fileID: 296881018}
+  _betManager: {fileID: 1444711097}
   spinning: 0
   preDeterminedResult: -1
   jumpDuration: 1

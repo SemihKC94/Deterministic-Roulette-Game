@@ -6,6 +6,7 @@ using SKC.DeterministicRoulette.Wheel;
 using SKC.DeterministicRoulette.Events;
 using SKC.DeterministicRoulette.Save;
 using SKC.DeterministicRoulette.Sound;
+using SKC.DeterministicRoulette.Bet;
 
 namespace SKC.DeterministicRoulette.Ball
 {
@@ -17,6 +18,7 @@ namespace SKC.DeterministicRoulette.Ball
         [SerializeField] private WheelTable wheelControll;
         [SerializeField] private Transform pivotTransform;
         [SerializeField] private Transform pivotWheelTransform;
+        [SerializeField] private BetManager _betManager;
 
         [Space, Header("Settings")]
         [SerializeField] private bool spinning = false;
@@ -54,6 +56,7 @@ namespace SKC.DeterministicRoulette.Ball
             _animateBall = true;
             SaveManager.SaveData.SpinCount++;
             SoundManager.Instance.PlayRollSound();
+            //_betManager.ConfirmBet();
         }
 
         public void Cheat(int number)

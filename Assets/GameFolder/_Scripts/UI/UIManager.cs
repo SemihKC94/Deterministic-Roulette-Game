@@ -66,7 +66,7 @@ namespace SKC.DeterministicRoulette.UI
 
         private void Start()
         {
-            _clearButton.onClick.AddListener(() => ClearBet());
+            _clearButton.onClick.AddListener(() => ClearBet(true));
             _spinButton.onClick.AddListener(() => Spin());
             _lossAgainButton.onClick.AddListener(() => Again(false));
             _winAgainButton.onClick.AddListener(() => Again(true));
@@ -117,7 +117,7 @@ namespace SKC.DeterministicRoulette.UI
             SoundManager.Instance.PlayClickSound();
             _betManager.ResetBets();
             BettedChips(0);
-            ClearBet();
+            ClearBet(false);
 
             if (win)
             {
@@ -132,10 +132,10 @@ namespace SKC.DeterministicRoulette.UI
             _cameraManager.CameraChange(0);
         }
 
-        private void ClearBet()
+        private void ClearBet(bool fromButton)
         {
             SoundManager.Instance.PlayClickSound();
-            _betManager.ClearBet();
+            _betManager.ClearBet(fromButton);
             BettedChips(0);
             _betManager.ResetBets();
         }
@@ -212,7 +212,7 @@ namespace SKC.DeterministicRoulette.UI
 
                 temp += "\n" + $"Spin Count = <color=yellow>{SaveManager.SaveData.SpinCount}</color>" + "\n" +
                     $"Win Count = <color=green>{SaveManager.SaveData.WinCount}</color>" + "\n" +
-                    $"Loss Count = <color=red>{SaveManager.SaveData.WinCount}</color>" + "\n" +
+                    $"Loss Count = <color=red>{SaveManager.SaveData.LossCount}</color>" + "\n" +
                     $"Total Gained = <color=green>{SaveManager.SaveData.TotalGainChip}</color>" + "\n" +
                     $"Total Loss = <color=red>{SaveManager.SaveData.TotalLossChip}</color>";
 

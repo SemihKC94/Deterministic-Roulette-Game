@@ -100,6 +100,7 @@ namespace SKC.DeterministicRoulette.Bet
             yield return Helper.GetWait(1.0f);
             if (_gainedChips > 0)
             {
+                Debug.Log("Wim");
                 SaveManager.SaveData.SoftCurrency += _gainedChips;
                 _uiManager.Win(_gainedChips);
                 _winConffeties.Play();
@@ -110,6 +111,8 @@ namespace SKC.DeterministicRoulette.Bet
             {
                 SaveManager.SaveData.TotalLossChip += _unconfirmedChips;
                 SaveManager.SaveData.LossCount += 1;
+                _unconfirmedChips = 0;
+                _gainedChips = 0;
                 _uiManager.Loss();
             }
 
@@ -172,15 +175,17 @@ namespace SKC.DeterministicRoulette.Bet
             {
                 item.Reset();
             }
+            _gainedChips = 0;
         }
 
-        public void ClearBet()
+        public void ClearBet(bool fromButton)
         {
             if(_tempChip != null)
                 _tempChip.gameObject.SetActive(false);
 
             _tempChip = null;
-            SaveManager.SaveData.SoftCurrency += _unconfirmedChips;
+            if(fromButton)
+                SaveManager.SaveData.SoftCurrency += _unconfirmedChips;
             _unconfirmedChips = 0;
             _totalBetChips = 0;
             _currentBetChips = 0;
