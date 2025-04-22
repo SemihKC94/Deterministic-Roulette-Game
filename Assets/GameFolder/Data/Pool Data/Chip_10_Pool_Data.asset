@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20062211cd65f2541b897bf1e4f823ad, type: 3}
+  m_Name: Chip_10_Pool_Data
+  m_EditorClassIdentifier: 
+  MaxSize: 50
+  Behaviour: {fileID: 985758996880302615, guid: 3ba9813a89268d241b73692d885f2e97,
+    type: 3}
