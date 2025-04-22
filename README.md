@@ -7,15 +7,15 @@ Deterministic Roulette Game for Joker Games
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://pasteboard.co/nVSO4ZdTsIHB.png" alt="project-screenshot" width="360" height="640/">
+<img src="https://gcdnb.pbrd.co/images/nVSO4ZdTsIHB.png?o=1" alt="project-screenshot" width="360" height="640/">
 
-<img src="https://pasteboard.co/8nSTGiUvDd9w.png" alt="project-screenshot" width="360" height="640/">
+<img src="https://gcdnb.pbrd.co/images/8nSTGiUvDd9w.png?o=1" alt="project-screenshot" width="360" height="640/">
 
-<img src="https://pasteboard.co/e5rCoULw8q4Z.png" alt="project-screenshot" width="360" height="640/">
+<img src="https://gcdnb.pbrd.co/images/e5rCoULw8q4Z.png?o=1" alt="project-screenshot" width="360" height="640/">
 
-<img src="https://pasteboard.co/vMN4a0jtA5fA.png" alt="project-screenshot" width="360" height="640/">
+<img src="https://gcdnb.pbrd.co/images/vMN4a0jtA5fA.png?o=1" alt="project-screenshot" width="360" height="640/">
 
-<img src="https://pasteboard.co/nx7r87LD05MP.png" alt="project-screenshot" width="360" height="640/">
+<img src="https://gcdnb.pbrd.co/images/nx7r87LD05MP.png?o=1" alt="project-screenshot" width="360" height="640/">
 
   
   
